@@ -1,6 +1,10 @@
 const WrappingComponent = ({ children, pagePropsFrom_App }) => {
-  // Add any additional logic or styling here
-  console.log("WrappingComponent.js , pagePropsFrom_App", pagePropsFrom_App);
+  // this is working because no dot operator
+  //   console.log("WrappingComponent.js , pagePropsFrom_App", pagePropsFrom_App);
+  console.log(
+    "WrappingComponent.js , pagePropsFrom_App",
+    pagePropsFrom_App.secret1
+  );
   return <div>{children}</div>;
 };
 
