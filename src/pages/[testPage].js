@@ -7,7 +7,7 @@ export default function myPage({ mySecret }) {
   return (
     <>
       <h1> hello world!</h1>
-      <h1>this is the page with secret : {mySecret.secret1}</h1>
+      <h1>this is the page with secret : {mySecret.secret1.innerSecret1}</h1>
     </>
   );
 }
@@ -18,7 +18,9 @@ export async function getStaticProps({ params }) {
   return {
     props: {
       mySecret: {
-        secret1: "this is secret 1",
+        secret1: {
+          innerSecret1: "this is secret 1",
+        },
         secret2: "this is secret 2",
       },
     },

@@ -3,7 +3,7 @@ const WrappingComponent = ({ children, pagePropsFrom_App }) => {
   //   console.log("WrappingComponent.js , pagePropsFrom_App", pagePropsFrom_App);
   console.log(
     "WrappingComponent.js , pagePropsFrom_App",
-    pagePropsFrom_App.secret1
+    pagePropsFrom_App.secret1.innerSecret1
   );
   return <div>{children}</div>;
 };
