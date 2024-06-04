@@ -1,11 +1,13 @@
 const WrappingComponent = ({ children, pagePropsFrom_App }) => {
   //   console.log("pagePropsFrom_App: ", pagePropsFrom_App);
   //   if (!pagePropsFrom_App || pagePropsFrom_App == {})
-  return;
-  console.log(
-    "WrappingComponent.js , pagePropsFrom_App",
-    pagePropsFrom_App.secret1.innerSecret1
-  );
+  if (false) {
+    console.log(
+      "WrappingComponent.js , pagePropsFrom_App",
+      pagePropsFrom_App.secret1.innerSecret1
+    );
+  }
+
   return <div>{children}</div>;
 };
 
